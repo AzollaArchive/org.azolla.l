@@ -100,8 +100,7 @@
         <com.belerweb_pinyin4j_version>2.5.0</com.belerweb_pinyin4j_version>
         <com.google.code.findbugs_jsr305_version>3.0.0</com.google.code.findbugs_jsr305_version>
         <com.google.guava_guava_version>18.0</com.google.guava_guava_version>
-        <com.google.zxing_core_version>3.2.0</com.google.zxing_core_version>
-        <com.google.zxing_javase_version>3.2.0</com.google.zxing_javase_version>
+        <com.google.zxing_version>3.2.0</com.google.zxing_version>
         <commons-io_commons-io_version>2.4</commons-io_commons-io_version>
         <commons-net_commons-net_version>3.3</commons-net_commons-net_version>
         <javax.servlet_javax.servlet-api_version>3.1.0</javax.servlet_javax.servlet-api_version>
@@ -110,10 +109,8 @@
         <netbeans_nbantext_version>4.0</netbeans_nbantext_version><!-- ref:ant;dep: -->
         <org.apache.ant_ant_version>1.9.4</org.apache.ant_ant_version>
         <org.apache.tomcat.maven_tomcat7-maven-plugin_version>2.2</org.apache.tomcat.maven_tomcat7-maven-plugin_version>
-        <org.slf4j_slf4j-api_version>1.7.12</org.slf4j_slf4j-api_version>
-        <org.slf4j_slf4j-log4j12_version>1.7.12</org.slf4j_slf4j-log4j12_version>
-        <org.springframework_spring-web_version>4.1.6.RELEASE</org.springframework_spring-web_version>
-        <org.springframework_spring-webmvc_version>4.1.6.RELEASE</org.springframework_spring-webmvc_version>
+        <org.slf4j_version>1.7.12</org.slf4j_version>
+        <org.springframework_version>4.1.6.RELEASE</org.springframework_version>
 		<!-- plugins -->
 		<maven-compiler-plugin.version>3.3</maven-compiler-plugin.version><!-- org.apache.maven -->
 		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version><!-- org.apache.maven.plugins -->
@@ -144,12 +141,12 @@
             <dependency>
                 <groupId>com.google.zxing</groupId>
                 <artifactId>core</artifactId>
-                <version>${com.google.zxing_core_version}</version>
+                <version>${com.google.zxing_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.google.zxing</groupId>
                 <artifactId>javase</artifactId>
-                <version>${com.google.zxing_javase_version}</version>
+                <version>${com.google.zxing_version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
@@ -196,22 +193,22 @@
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
-				<version>${org.slf4j_slf4j-api_version}</version>
+				<version>${org.slf4j_version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-log4j12</artifactId>
-				<version>${org.slf4j_slf4j-log4j12_version}</version>
+				<version>${org.slf4j_version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-web</artifactId>
-				<version>${org.springframework_spring-web_version}</version>
+				<version>${org.springframework_version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-webmvc</artifactId>
-				<version>${org.springframework_spring-webmvc_version}</version>
+				<version>${org.springframework_version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
