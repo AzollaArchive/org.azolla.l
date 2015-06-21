@@ -98,6 +98,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- dependencies -->
         <com.belerweb_pinyin4j_version>2.5.0</com.belerweb_pinyin4j_version>
+        <com.fasterxml.jackson.core_version>2.5.4</com.fasterxml.jackson.core_version>
         <com.google.code.findbugs_jsr305_version>3.0.0</com.google.code.findbugs_jsr305_version>
         <com.google.guava_guava_version>18.0</com.google.guava_guava_version>
         <com.google.zxing_version>3.2.0</com.google.zxing_version>
@@ -127,6 +128,21 @@
                 <groupId>com.belerweb</groupId>
                 <artifactId>pinyin4j</artifactId>
                 <version>${com.belerweb_pinyin4j_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${com.fasterxml.jackson.core_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${com.fasterxml.jackson.core_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${com.fasterxml.jackson.core_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.google.code.findbugs</groupId>
