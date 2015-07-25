@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.azolla.l</groupId>
 	<artifactId>org.azolla.l</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<packaging>pom</packaging>
 	<name>Azolla.org Library Top Parent</name>
 	<description>This project is Azolla.org library top parent</description>
@@ -109,10 +109,10 @@
         <log4j_log4j_version>1.2.17</log4j_log4j_version>
         <netbeans_nbantext_version>4.0</netbeans_nbantext_version><!-- ref:ant;dep: -->
         <org.apache.ant_ant_version>1.9.4</org.apache.ant_ant_version>
-        <org.apache.tomcat.maven_tomcat7-maven-plugin_version>2.2</org.apache.tomcat.maven_tomcat7-maven-plugin_version>
         <org.slf4j_version>1.7.12</org.slf4j_version>
         <org.springframework_version>4.1.6.RELEASE</org.springframework_version>
-		<!-- plugins -->
+        <!-- plugins -->
+        <org.apache.tomcat.maven_tomcat7-maven-plugin_version>2.2</org.apache.tomcat.maven_tomcat7-maven-plugin_version>
         <org.jacoco_jacoco-maven-plugin_version>0.7.5.201505241946</org.jacoco_jacoco-maven-plugin_version>
 		<maven-compiler-plugin.version>3.3</maven-compiler-plugin.version><!-- org.apache.maven -->
 		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version><!-- org.apache.maven.plugins -->
@@ -202,11 +202,6 @@
 				<artifactId>ant</artifactId>
 				<version>${org.apache.ant_ant_version}</version>
 			</dependency>
-            <dependency>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>${org.apache.tomcat.maven_tomcat7-maven-plugin_version}</version>
-            </dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
@@ -232,6 +227,15 @@
 	<build>
 		<pluginManagement>
 			<plugins>
+                <plugin>
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                    <version>${org.apache.tomcat.maven_tomcat7-maven-plugin_version}</version>
+                    <configuration>
+                        <path>/</path>
+                        <contextReloadable>true</contextReloadable>
+                    </configuration>
+                </plugin>
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
