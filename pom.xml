@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.azolla.l</groupId>
 	<artifactId>org.azolla.l</artifactId>
-	<version>1.0.4</version>
+	<version>1.0.5</version>
 	<packaging>pom</packaging>
 	<name>Azolla.org Library Top Parent</name>
 	<description>This project is Azolla.org library top parent</description>
@@ -166,20 +166,9 @@
                 <version>${com.google.zxing_version}</version>
             </dependency>
             <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>${commons-io_commons-io_version}</version>
-            </dependency>
-            <dependency>
                 <groupId>commons-net</groupId>
                 <artifactId>commons-net</artifactId>
                 <version>${commons-net_commons-net_version}</version>
-            </dependency>
-            <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
-                <version>${javax.servlet_javax.servlet-api_version}</version>
-                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>junit</groupId>
@@ -191,11 +180,6 @@
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
                 <version>${log4j_log4j_version}</version>
-            </dependency>
-            <dependency>
-                <groupId>netbeans</groupId>
-                <artifactId>nbantext</artifactId>
-                <version>${netbeans_nbantext_version}</version>
             </dependency>
 			<dependency>
 				<groupId>org.apache.ant</groupId>
@@ -212,30 +196,11 @@
 				<artifactId>slf4j-log4j12</artifactId>
 				<version>${org.slf4j_version}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-web</artifactId>
-				<version>${org.springframework_version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-webmvc</artifactId>
-				<version>${org.springframework_version}</version>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
 		<pluginManagement>
 			<plugins>
-                <plugin>
-                    <groupId>org.apache.tomcat.maven</groupId>
-                    <artifactId>tomcat7-maven-plugin</artifactId>
-                    <version>${org.apache.tomcat.maven_tomcat7-maven-plugin_version}</version>
-                    <configuration>
-                        <path>/</path>
-                        <contextReloadable>true</contextReloadable>
-                    </configuration>
-                </plugin>
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
