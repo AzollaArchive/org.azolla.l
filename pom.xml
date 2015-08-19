@@ -5,7 +5,7 @@
 	<version>1.0.7</version>
 	<packaging>pom</packaging>
 	<name>Azolla.org Library Top Parent</name>
-	<description>This project is Azolla.org library top parent</description>
+	<description>Azolla.org Library Top Parent</description>
 	<url>https://github.com/Azollas/org.azolla.l</url>
 	<inceptionYear>2011</inceptionYear>
 	<organization>
